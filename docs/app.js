@@ -17,7 +17,7 @@ app.controller('indexCtrl', function($scope, $http) {
         }
     });
 
-    $http.get ('https://wallet.oxycoin.io/api/delegates/get?username=jan').then (function (res) {
+    $http.get ('https://wallet.oxycoin.io/api/delegates/get?username=batman').then (function (res) {
         $scope.delegate = res.data.delegate;
     });
 });
